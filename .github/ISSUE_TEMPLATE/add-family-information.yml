@@ -1,0 +1,48 @@
+name: Add family information
+description: Add your branch, a person, a photograph or a story to the history
+title: "[Family] "
+labels: ["family information"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        You can write in Armenian, Russian or English. · Կարող եք գրել հայերեն, ռուսերեն կամ անգլերեն։ · Можно писать по-армянски, по-русски или по-английски.
+
+        **This page is public.** Do not include phone numbers, addresses, or details about living people who have not agreed. For private information, use the form on the [website](https://harutbdo.github.io/house-bdoyan/) instead.
+  - type: textarea
+    id: information
+    attributes:
+      label: What would you like to add?
+      description: Names, years, villages, who was whose child, where the family lives today, a story you remember.
+    validations:
+      required: true
+  - type: input
+    id: relation
+    attributes:
+      label: How are you related?
+      placeholder: e.g. grandson of Grigor Bdoyan of Pokr Khanchali
+  - type: dropdown
+    id: source
+    attributes:
+      label: Where does this information come from?
+      options:
+        - A document (certificate, register, letter)
+        - A gravestone
+        - A relative's memory
+        - My own memory
+        - Other (please explain above)
+    validations:
+      required: true
+  - type: textarea
+    id: files
+    attributes:
+      label: Photographs or documents
+      description: Drag images here. A phone photo of a document is fine.
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Consent
+      options:
+        - label: I agree that what I send may be used in the family book and on the website.
+          required: true
+        - label: Anyone living who is named here has agreed.

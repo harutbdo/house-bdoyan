@@ -1,0 +1,36 @@
+name: Correction
+description: Report a mistake in a name, date, place or translation
+title: "[Correction] "
+labels: ["correction"]
+body:
+  - type: dropdown
+    id: language
+    attributes:
+      label: Which version?
+      multiple: true
+      options:
+        - Հայերեն (Armenian)
+        - English
+        - Русский (Russian)
+        - PDF book or handbook
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where is it?
+      placeholder: e.g. Chapter III, the paragraph about the water-mill
+    validations:
+      required: true
+  - type: textarea
+    id: now
+    attributes:
+      label: What it says now
+    validations:
+      required: true
+  - type: textarea
+    id: should
+    attributes:
+      label: What it should say, and how you know
+    validations:
+      required: true

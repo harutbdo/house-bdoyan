@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+._*
+# Windows
+Thumbs.db
+desktop.ini
+# Editors
+.vscode/
+.idea/
+*.swp
+# Archives (upload unpacked files, not zips)
+*.zip
