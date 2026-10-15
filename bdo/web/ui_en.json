@@ -1,0 +1,298 @@
+{
+ "lang_label": "EN",
+ "notes": "Notes",
+ "compiler_placeholder": "the compiler",
+ "contents": "CONTENTS",
+ "intro": "This is the story of one household that became a family name. It begins with a man called Bdo (Bedros) on the high plain of Karin, follows his descendants across a closing frontier in 1829–1830 to Lake Khanchali, and gathers every Bdoyan the records name, from his time to ours.",
+ "toc": [
+  [
+   "I",
+   "Bdo of the Karin Plain"
+  ],
+  [
+   "II",
+   "The Great Exodus, 1829–1830"
+  ],
+  [
+   "III",
+   "A New Home on Lake Khanchali"
+  ],
+  [
+   "IV",
+   "Vard Bdoyan, the Family’s Scholar"
+  ],
+  [
+   "V",
+   "One Ancestor, One Family"
+  ],
+  [
+   "VI",
+   "The Bdoyans We Know"
+  ],
+  [
+   "VII",
+   "Where the Bdoyans Live Today"
+  ],
+  [
+   "✦",
+   "Afterword: How This History Could Be Written"
+  ]
+ ],
+ "ref_kick": "REFERENCE",
+ "ref_h": "Reference",
+ "ref_intro": "Everything behind the story: the sources used, every source still to be read online and on paper, a step-by-step guide to completing the family tree, and the words and names you will meet in the records. Every web address is a link.",
+ "ref_nav": [
+  [
+   "sources",
+   "Sources used"
+  ],
+  [
+   "h2",
+   "Sources online"
+  ],
+  [
+   "h3",
+   "Sources not online"
+  ],
+  [
+   "h1",
+   "Finding the exact tree"
+  ],
+  [
+   "gloss",
+   "Words and names"
+  ]
+ ],
+ "sheets_h": "Printable worksheets",
+ "sheets_p": "The research handbook (see Download below) has four sheets to print and fill in: your line back to Bdo, a family group sheet, “where our branch lives today”, and a research log.",
+ "this_page": "this page",
+ "hero": {
+  "kicker": "A FAMILY HISTORY",
+  "title": "The House <em>Bdoyan</em>",
+  "sub": "A History of the Bdoyan Family",
+  "arm": "Բդոյանների պատմությունը",
+  "places": "DINARIGOM · POKR KHANCHALI · ABUL",
+  "line": "From the Karin plain to Lake Khanchali, 1829–2026",
+  "cred": "Pokr Khanchali on Lake Khanchali · photo Yasuhiro Kojima, CC BY-SA 4.0",
+  "cta": "Add your branch"
+ },
+ "nav": {
+  "story": "The story",
+  "family": "Family chart",
+  "reference": "Reference",
+  "making": "How it was made",
+  "contribute": "Contribute",
+  "download": "Download",
+  "brand": "The House Bdoyan"
+ },
+ "dl_kick": "DOWNLOAD",
+ "dl_h": "The books as PDF",
+ "dl_p": "The printed editions, laid out for A4 paper. The research handbook has the archive references and the worksheets.",
+ "dl_btn": "Download",
+ "dl_none": "Downloads are not available in this view. Write to the address above to receive the PDF files.",
+ "dl_book_en": [
+  "The House Bdoyan",
+  "English edition"
+ ],
+ "dl_hb_en": [
+  "Finding the Bdoyans: A Research Handbook",
+  "English"
+ ],
+ "dl_book_hy": [
+  "Բդոյանների տունը",
+  "Armenian edition · Հայերեն"
+ ],
+ "dl_hb_hy": [
+  "Research handbook",
+  "Armenian · Հայերեն"
+ ],
+ "dl_book_ru": [
+  "Дом Бдоянов",
+  "Russian edition · Русский"
+ ],
+ "dl_hb_ru": [
+  "Research handbook",
+  "Russian · Русский"
+ ],
+ "footer": "© 2026 the Bdoyan family. For personal and family use. Photographs: Yasuhiro Kojima (CC BY-SA 4.0), Brian Dell (public domain). Maps from Natural Earth data. Researched and written with the help of Claude, an AI model by Anthropic.",
+ "c": {
+  "kick": "CONTRIBUTE",
+  "h": "Add to the family history",
+  "lead": "This is a working edition, and every Bdoyan can add to it: your branch and where it lives today, a story, a photograph or document, a correction, or help with the records. Choose what you want to send, fill in what you know, and the page will write it as a message for you to send.",
+  "kind": "What would you like to send?",
+  "types": {
+   "branch": [
+    "Your branch",
+    "who you descend from and where your family lives"
+   ],
+   "story": [
+    "A story or memory",
+    "something told in the family"
+   ],
+   "document": [
+    "A photo or document",
+    "pictures, letters, certificates"
+   ],
+   "correction": [
+    "A correction",
+    "something in the book that is wrong"
+   ],
+   "help": [
+    "Offer to help",
+    "archives, languages, DNA"
+   ]
+  },
+  "f_house": "Which house or line do you come from?",
+  "houses": {
+   "h28": "Pokr Khanchali · house 28 (Harutyun)",
+   "h29": "Pokr Khanchali · house 29 (Grigor)",
+   "h30": "Pokr Khanchali · house 30 (Anton and Davit)",
+   "h31": "Pokr Khanchali · house 31 (Mesrop)",
+   "h32": "Pokr Khanchali · house 32 (Zakar)",
+   "abul": "Abul (the line from Umudum)",
+   "akh": "Akhalkalaki",
+   "other": "Another place, or not sure"
+  },
+  "f_ancestor": "The oldest ancestor you know",
+  "h_ancestor": "Name, and dates or place if you know them, e.g. “Hovhannes, son of Mesrop, born about 1890 in Pokr Khanchali”",
+  "f_village": "The family village before it moved",
+  "f_today": "Where the households of your branch live today",
+  "h_today": "One line each: town, country and number of households, e.g. “Yerevan, Armenia, 3 households”. No street addresses.",
+  "f_title": "Title of the story",
+  "f_teller": "Who told it, and when",
+  "f_what": "What is it?",
+  "h_what": "e.g. “Photo of Mesrop and Anush, about 1912” or “Birth certificate of my grandfather”",
+  "f_original": "Where the original is kept",
+  "n_attach": "Attach the photo or scan to the email or WhatsApp message when you send it.",
+  "f_where": "Where in the book?",
+  "h_where": "Chapter and page, or the sentence",
+  "f_source": "How do you know? (source)",
+  "helps": {
+   "yerevan": "Visit the National Archives in Yerevan",
+   "tbilisi": "Visit the National Archives in Tbilisi",
+   "russian": "Read old Russian handwriting",
+   "georgian": "Read Georgian records",
+   "translate": "Translate (Armenian, Russian, English)",
+   "dna": "Take a Y-DNA test (Bdoyan men)",
+   "elders": "Record the elders of my branch"
+  },
+  "f_text": "Your message",
+  "h_text": "Write as much as you like, in Armenian, Russian or English.",
+  "f_name": "Your name",
+  "f_relation": "How you are related",
+  "h_relation": "e.g. “grandson of Grigor Bdoyan of Pokr Khanchali”",
+  "f_contact": "Phone or email (optional)",
+  "h_contact": "Only the compiler sees this. It is never published.",
+  "f_credit": "In the book, credit me as",
+  "cr_name": "my full name",
+  "cr_init": "my initials",
+  "cr_anon": "“a member of the family”",
+  "consent": "I agree that what I send may be used in the family book and on this page",
+  "living": "Anyone living who is named here has agreed",
+  "prepare": "Prepare my message",
+  "out_h": "Your message is ready",
+  "out_p": "Send it to the compiler of the book. Copy it into an email or a chat, or use one of the buttons.",
+  "send_to": "Send to:",
+  "copy_addr": "Copy address",
+  "copy_msg": "Copy message",
+  "open_mail": "Open in email",
+  "save_db": "Save to the family archive",
+  "out_note": "Nothing is published until the compiler has checked it. The code at the end of the message lets the compiler add your entry to this page exactly as you wrote it.",
+  "edit": "Change my answers",
+  "wall_h": "From the family",
+  "wall_empty": "Contributions appear here once the compiler has checked them. Be the first to add your branch.",
+  "owner_h": "Inbox (only you see this)",
+  "owner_p": "Contributions saved here are private until you approve them. Paste a message you received to add it.",
+  "import_l": "Paste a received message",
+  "import_b": "Add to inbox",
+  "inbox_empty": "No contributions waiting."
+ },
+ "js": {
+  "types": {
+   "branch": "Branch",
+   "story": "Story or memory",
+   "document": "Photo or document",
+   "correction": "Correction",
+   "help": "Offer to help"
+  },
+  "subject": "The House Bdoyan · {type} from {name}",
+  "hello": "Hello, here is my contribution to the Bdoyan family book.",
+  "labels": {
+   "type": "Type",
+   "name": "Name",
+   "relation": "Related as",
+   "contact": "Contact",
+   "credit": "Credit me as",
+   "house": "House or line",
+   "ancestor": "Oldest ancestor known",
+   "village": "Family village before moving",
+   "today": "Where the branch lives today",
+   "title": "Title",
+   "teller": "Told by",
+   "what": "Item",
+   "original": "Original kept at",
+   "where": "Place in the book",
+   "source": "Source",
+   "help": "I can help with",
+   "text": "Message",
+   "consent": "Consent to use",
+   "living": "Living people named have agreed"
+  },
+  "yes": "yes",
+  "no": "no",
+  "credit": {
+   "name": "full name",
+   "initials": "initials",
+   "anon": "a member of the family"
+  },
+  "code_note": "Code for the website (please keep):",
+  "err_name": "Please write your name.",
+  "err_consent": "Please tick the box to agree that your contribution may be used.",
+  "err_text": "Please write something in your message.",
+  "copied": "Copied.",
+  "copy_fail": "Your browser blocked copying. Select the text and copy it by hand.",
+  "saved": "Saved to the family archive.",
+  "save_fail": "Could not save here. Send the message instead.",
+  "approve": "Approve and publish",
+  "remove": "Remove",
+  "unpublish": "Remove from page",
+  "imported": "Added to the inbox.",
+  "no_code": "No contribution code found in the pasted text.",
+  "dl_ok": "Download started.",
+  "dl_declined": "Download cancelled.",
+  "dl_fail": "The download did not work here. Write to the address in the Contribute section to receive the file.",
+  "from": "from",
+  "anon": "A member of the family"
+ },
+ "ref_word": "Reference",
+ "ref_xrefs": [
+  [
+   "every online source is in Chapter II, archives and books in Chapter III",
+   "every online source is under “Sources online”, archives and books under “Sources not online”"
+  ],
+  [
+   "are in Chapter III.",
+   "are listed under “Sources not online”."
+  ],
+  [
+   "works in Chapter III",
+   "works listed under “Sources not online”"
+  ],
+  [
+   "issues in Chapter III",
+   "issues listed under “Sources not online”"
+  ],
+  [
+   "(Chapter II)",
+   "(see “Sources online”)"
+  ],
+  [
+   "(both used in Chapter VI of <i>The House Bdoyan</i>)",
+   "(both used in Chapter VI)"
+  ],
+  [
+   "Send each finding for the book too (see the last page).",
+   "Send each finding for the book too, through the Contribute section."
+  ]
+ ]
+}

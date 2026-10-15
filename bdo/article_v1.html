@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The House of Bdo — A Bdoyan Family History</title>
+<meta name="author" content="Prepared for the Bdoyan family">
+<meta name="description" content="Origins, migration and living history of the Bdoyan family, from the Karin plain to Lake Khanchali and beyond.">
+<style>
+@font-face { font-family: "Source Serif 4"; src: url("fonts/SourceSerif4.ttf") format("truetype"); font-weight: 200 900; font-style: normal; }
+@font-face { font-family: "Source Serif 4"; src: url("fonts/SourceSerif4-Italic.ttf") format("truetype"); font-weight: 200 900; font-style: italic; }
+@font-face { font-family: "Cormorant Garamond"; src: url("fonts/CormorantGaramond.ttf") format("truetype"); font-weight: 300 700; font-style: normal; }
+@font-face { font-family: "Cormorant Garamond"; src: url("fonts/CormorantGaramond-Italic.ttf") format("truetype"); font-weight: 300 700; font-style: italic; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter.ttf") format("truetype"); font-weight: 100 900; }
+@font-face { font-family: "Noto Serif Armenian"; src: url("fonts/NotoSerifArmenian.ttf") format("truetype"); font-weight: 100 900; }
+
+:root {
+  --paper: #FBF8F2; --ink: #2A2420; --soft: #4A423B; --muted: #7A6F64; --rule: #DCD2C2;
+  --accent: #8E2C2C; --accent-d: #5E1A1D; --gold: #A9813F; --gold-l: #E8C887; --tint: #F4EDE1; --tint2: #EFE6D6;
+  --serif: "Source Serif 4", "Noto Serif Armenian", Georgia, serif;
+  --display: "Cormorant Garamond", "Noto Serif Armenian", Georgia, serif;
+  --sans: "Inter", "Noto Serif Armenian", system-ui, sans-serif;
+  --arm: "Noto Serif Armenian", serif;
+}
+
+@page {
+  size: A4;
+  margin: 19mm 20mm 21mm 20mm;
+  background: var(--paper);
+  @top-left { content: "THE HOUSE OF BDO"; font-family: "Inter"; font-size: 6.5pt; letter-spacing: 0.18em; color: #9A8F82; font-weight: 600; vertical-align: bottom; padding-bottom: 4mm; }
+  @top-right { content: "A Bdoyan family history"; font-family: "Cormorant Garamond"; font-style: italic; font-size: 9pt; color: #9A8F82; vertical-align: bottom; padding-bottom: 3.6mm; }
+  @bottom-center { content: counter(page); font-family: "Cormorant Garamond"; font-size: 10.5pt; font-weight: 600; color: var(--accent); vertical-align: top; padding-top: 5mm; }
+}
+@page cover { margin: 0; @top-left { content: none; } @top-right { content: none; } @bottom-center { content: none; } }
+@page plain { @top-left { content: none; } @top-right { content: none; } }
+
+* { box-sizing: border-box; }
+html { background: var(--paper); }
+body { margin: 0; font-family: var(--serif); font-size: 9.8pt; line-height: 1.56; color: var(--ink); -webkit-print-color-adjust: exact; print-color-adjust: exact; font-optical-sizing: auto; font-kerning: normal; font-variant-ligatures: common-ligatures; }
+.opener h2, h3, .facts .v, .toc .p, .toc .n, .tl b, .career div span:first-child, .road .yr, .reasons li::before, .steps > li::before, .side b, .ped .gl, .rung .g, td:first-child, .statement p { font-variant-numeric: lining-nums; }
+.opener, .facts, .statement, .cards, .ladder, .road, figure.wide, table, .tablewrap, .gerd, .profile, .dir, .note-full { clear: both; }
+.arm, [lang="hy"] { font-family: var(--arm); font-size: 0.9em; letter-spacing: 0.01em; }
+
+/* ---------- cover ---------- */
+.cover { page: cover; width: 210mm; height: 297mm; position: relative; overflow: hidden; color: var(--gold-l);
+  background: radial-gradient(120% 80% at 70% 35%, #6B2024 0%, #4A1518 45%, #2A0C0E 100%); break-after: page; }
+.cover .art { position: absolute; left: -4mm; top: 112mm; width: 218mm; opacity: 0.95; -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 22%, #000 70%, transparent 100%); mask-image: linear-gradient(to bottom, transparent 0%, #000 22%, #000 70%, transparent 100%); }
+.cover .frame { position: absolute; inset: 11mm; border: 0.4mm solid rgba(232,200,135,.55); }
+.cover .frame::after { content: ""; position: absolute; inset: 1.6mm; border: 0.15mm solid rgba(232,200,135,.35); }
+.cover .top { position: absolute; top: 26mm; left: 0; right: 0; text-align: center; }
+.cover .kicker { font-family: var(--sans); font-size: 7pt; letter-spacing: .32em; font-weight: 600; color: rgba(232,200,135,.85); }
+.cover .kicker .arm { letter-spacing: .12em; font-size: 7pt; }
+.cover h1 { font-family: var(--display); font-weight: 600; font-size: 60pt; line-height: .95; margin: 7mm 0 0; color: #F3DDAE; letter-spacing: .01em; }
+.cover h1 em { font-style: italic; font-weight: 500; }
+.cover .armtitle { font-family: var(--arm); font-size: 15pt; margin-top: 5mm; color: #E8C887; letter-spacing: .04em; }
+.cover .sub { font-family: var(--display); font-style: italic; font-size: 14.5pt; line-height: 1.3; margin: 6mm auto 0; max-width: 130mm; color: rgba(243,221,174,.9); }
+.cover .bottom { position: absolute; bottom: 24mm; left: 0; right: 0; text-align: center; }
+.cover .bottom .line { width: 40mm; height: 0.3mm; background: rgba(232,200,135,.6); margin: 0 auto 5mm; }
+.cover .bottom p { margin: 0; font-family: var(--sans); font-size: 7pt; letter-spacing: .26em; color: rgba(232,200,135,.8); font-weight: 500; }
+.cover .bottom p + p { margin-top: 2mm; font-family: var(--display); font-style: italic; letter-spacing: .02em; font-size: 11pt; font-weight: 500; }
+.rosette { display: block; margin: 0 auto; }
+
+/* ---------- generic ---------- */
+.main { margin-right: 54mm; position: relative; }
+.wide { margin-right: -54mm; }
+p { margin: 0 0 0.62em; orphans: 3; widows: 3; }
+a { color: inherit; text-decoration: none; }
+.lead { font-size: 12.2pt; line-height: 1.5; color: var(--soft); font-family: var(--serif); font-weight: 400; margin-bottom: 1.1em; }
+.dropcap::first-letter { font-family: var(--display); font-weight: 600; float: left; font-size: 46pt; line-height: .8; padding: 1.2mm 2.2mm 0 0; color: var(--accent); }
+h3 { font-family: var(--display); font-weight: 600; font-size: 15.5pt; line-height: 1.15; margin: 1.25em 0 .35em; color: var(--ink); break-after: avoid; }
+h3 .num { color: var(--gold); font-style: italic; margin-right: .3em; }
+h4 { font-family: var(--sans); font-weight: 600; font-size: 7pt; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); margin: 1.2em 0 .45em; break-after: avoid; }
+em.t { font-style: italic; color: var(--soft); }
+.sm { font-size: .9em; }
+strong { font-weight: 650; }
+hr.orn { border: 0; text-align: center; margin: 5mm 0; height: 4mm; }
+hr.orn::before { content: "❦"; font-family: var(--display); color: var(--gold); font-size: 13pt; }
+
+/* chapter opener */
+.chapter { break-before: page; }
+.opener { position: relative; margin: 0 -54mm 7mm 0; padding: 4mm 0 6mm; border-bottom: 0.3mm solid var(--rule); }
+.opener .no { font-family: var(--display); font-weight: 600; font-style: italic; font-size: 13pt; color: var(--gold); letter-spacing: .04em; }
+.opener .no span { font-family: var(--sans); font-style: normal; font-size: 6.5pt; letter-spacing: .25em; font-weight: 600; color: var(--muted); margin-left: 3mm; vertical-align: 2pt; }
+.opener h2 { font-family: var(--display); font-weight: 600; font-size: 34pt; line-height: 1; margin: 2.5mm 0 2.5mm; color: var(--ink); letter-spacing: -.003em; }
+.opener .hy { font-family: var(--arm); color: var(--accent); font-size: 10.5pt; letter-spacing: .03em; }
+.opener .big { position: absolute; right: 0; top: -6mm; font-family: var(--display); font-weight: 700; font-size: 92pt; line-height: 1; color: #F1E9DC; z-index: -1; }
+
+/* sidenotes */
+.side { float: right; clear: right; width: 46mm; margin: .2em -54mm .9em 0; font-size: 7.9pt; line-height: 1.45; color: var(--soft); break-inside: avoid; }
+.side .k { display: block; font-family: var(--sans); font-size: 6pt; letter-spacing: .18em; text-transform: uppercase; font-weight: 650; color: var(--accent); margin-bottom: 1.4mm; }
+.side.box { background: var(--tint); padding: 3.2mm 3.4mm; border-top: 0.6mm solid var(--gold); }
+.side .hyw { font-family: var(--arm); color: var(--accent); font-size: 8.4pt; }
+.side dl { margin: 0; }
+.side dt { font-family: var(--arm); color: var(--accent); font-size: 8.6pt; margin-top: 1.6mm; }
+.side dt:first-child { margin-top: 0; }
+.side dd { margin: 0; }
+.side ol, .side ul { margin: 0; padding-left: 4mm; }
+
+/* pull quote */
+.pull { margin: 5mm 0 5mm; padding: 1mm 0 1mm 6mm; border-left: 0.9mm solid var(--accent); break-inside: avoid; }
+.pull p { font-family: var(--display); font-style: italic; font-weight: 500; font-size: 15.5pt; line-height: 1.25; color: var(--accent-d); margin: 0 0 1.5mm; }
+.pull .src { font-family: var(--sans); font-size: 6.6pt; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.pull .hyq { font-family: var(--arm); font-size: 8.6pt; color: var(--soft); font-style: normal; line-height: 1.5; margin-bottom: 2mm; }
+
+/* figures */
+figure { margin: 4mm 0 5mm; break-inside: avoid; }
+figure img { width: 100%; display: block; }
+figcaption { font-family: var(--sans); font-size: 7pt; line-height: 1.5; color: var(--muted); margin-top: 2.6mm; padding-top: 2.2mm; border-top: 0.25mm solid var(--rule); display: grid; grid-template-columns: 26mm 1fr; gap: 4mm; }
+figcaption b { color: var(--accent); letter-spacing: .14em; font-size: 6.4pt; text-transform: uppercase; font-weight: 650; }
+
+/* contents page */
+.toc-page { page: plain; break-after: page; }
+.toc-head { font-family: var(--sans); font-size: 6.8pt; letter-spacing: .3em; font-weight: 650; color: var(--accent); margin: 2mm 0 6mm; }
+.toc-grid { display: grid; grid-template-columns: 1fr 60mm; gap: 12mm; }
+.toc a { display: grid; grid-template-columns: 11mm 1fr 10mm; align-items: baseline; padding: 3.1mm 0; border-bottom: 0.25mm solid var(--rule); }
+.toc .n { font-family: var(--display); font-style: italic; color: var(--gold); font-size: 13pt; font-weight: 600; }
+.toc .t { font-family: var(--display); font-size: 15pt; font-weight: 600; line-height: 1.1; }
+.toc .t small { display: block; font-family: var(--serif); font-size: 7.8pt; font-weight: 400; color: var(--muted); margin-top: 1mm; line-height: 1.35; }
+.toc .p { font-family: var(--display); font-size: 13pt; color: var(--accent); text-align: right; font-weight: 600; }
+.intro-note { font-family: var(--display); font-size: 13.5pt; line-height: 1.38; color: var(--soft); font-style: italic; margin: 0 0 7mm; max-width: 150mm; }
+.glance { background: var(--tint); padding: 5mm 5mm 3mm; border-top: 0.7mm solid var(--accent); }
+.glance .h5 { margin: 0 0 3mm; font-family: var(--sans); font-size: 6.5pt; letter-spacing: .24em; font-weight: 650; color: var(--accent); }
+.tl { list-style: none; margin: 0; padding: 0; position: relative; }
+.tl::before { content: ""; position: absolute; left: 1.3mm; top: 1.5mm; bottom: 2mm; width: 0.3mm; background: var(--gold); opacity: .6; }
+.tl li { position: relative; padding-left: 6mm; margin-bottom: 2.6mm; font-size: 7.6pt; line-height: 1.38; color: var(--soft); }
+.tl li::before { content: ""; position: absolute; left: 0.3mm; top: 1.2mm; width: 2.2mm; height: 2.2mm; border-radius: 50%; background: var(--paper); border: 0.4mm solid var(--gold); }
+.tl li.key::before { background: var(--accent); border-color: var(--accent); }
+.tl b { display: block; font-family: var(--display); font-size: 10.5pt; color: var(--ink); font-weight: 700; line-height: 1.1; }
+
+/* fact strip */
+.facts { display: grid; grid-template-columns: repeat(4, 1fr); margin: 2mm -54mm 6mm 0; border-top: 0.3mm solid var(--ink); border-bottom: 0.3mm solid var(--rule); }
+.facts > div { padding: 3.2mm 3mm 3mm 0; }
+.facts > div + div { padding-left: 4mm; border-left: 0.25mm solid var(--rule); }
+.facts .v { font-family: var(--display); font-size: 19pt; font-weight: 600; color: var(--accent); line-height: 1; }
+.facts .l { font-family: var(--sans); font-size: 6.4pt; letter-spacing: .06em; color: var(--muted); margin-top: 1.4mm; line-height: 1.35; }
+
+/* cards */
+.cards { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; margin: 4mm 0 4mm 0; }
+.card { background: #fff; border: 0.25mm solid var(--rule); padding: 4mm 4.4mm 3.4mm; break-inside: avoid; position: relative; }
+.card .tag { font-family: var(--sans); font-size: 6pt; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); font-weight: 650; }
+.card .ch { font-family: var(--display); font-size: 13pt; font-weight: 600; margin: 1.2mm 0 1.6mm; line-height: 1.15; color: var(--ink); }
+.card p { font-size: 8.3pt; line-height: 1.48; margin: 0 0 1.4mm; color: var(--soft); }
+.card .q { font-family: var(--display); font-style: italic; font-size: 11.5pt; line-height: 1.3; color: var(--accent-d); }
+.card.span2 { grid-column: span 2; }
+
+/* career timeline */
+.career { margin: 2mm 0 4mm; border-left: 0.3mm solid var(--rule); padding-left: 0; }
+.career div { display: grid; grid-template-columns: 22mm 1fr; padding: 1.4mm 0 1.4mm 0; border-bottom: 0.2mm dotted var(--rule); font-size: 8.6pt; line-height: 1.42; }
+.career div span:first-child { font-family: var(--display); font-weight: 700; color: var(--accent); font-size: 10.5pt; padding-left: 3mm; }
+
+/* generations ladder */
+.ladder { margin: 4mm 0 5mm 0; display: grid; grid-template-columns: 1fr; gap: 0; break-inside: avoid; }
+.rung { display: grid; grid-template-columns: 20mm 34mm 1fr; align-items: center; position: relative; min-height: 13.2mm; }
+.rung .g { font-family: var(--display); font-style: italic; font-weight: 600; font-size: 11pt; color: var(--gold); text-align: right; padding-right: 5mm; }
+.rung .node { justify-self: center; width: 28mm; text-align: center; background: #fff; border: 0.3mm solid var(--rule); border-radius: 1.6mm; padding: 1.6mm 1mm; font-family: var(--display); font-size: 10.5pt; font-weight: 600; line-height: 1.1; position: relative; z-index: 2; }
+.rung .node small { display: block; font-family: var(--sans); font-size: 5.8pt; color: var(--muted); font-weight: 500; letter-spacing: .04em; margin-top: .6mm; }
+.rung.root .node { background: var(--accent); color: #F7E7C6; border-color: var(--accent); }
+.rung.root .node small { color: #EBCB95; }
+.rung.hi .node { border-color: var(--accent); border-width: .45mm; }
+.rung .d { font-size: 8pt; line-height: 1.42; color: var(--soft); padding-left: 5mm; }
+.rung .d b { color: var(--ink); font-weight: 650; }
+.rung::before { content: ""; position: absolute; left: calc(20mm + 17mm); top: 0; bottom: 0; width: .35mm; background: var(--gold); opacity: .55; z-index: 1; }
+.rung:first-child::before { top: 50%; }
+.rung:last-child::before { bottom: 50%; }
+.rung .era { position: absolute; left: 0; }
+
+/* statement */
+.statement { margin: 4mm -54mm 6mm 0; padding: 7mm 8mm; background: var(--accent); color: #F7E7C6; position: relative; break-inside: avoid; }
+.statement p { margin: 0; font-family: var(--display); font-size: 21pt; line-height: 1.18; font-weight: 600; }
+.statement p.hy { font-family: var(--arm); font-size: 10.5pt; font-weight: 400; margin-top: 2.6mm; color: #EBCB95; }
+.statement .k { font-family: var(--sans); font-size: 6.2pt; letter-spacing: .26em; font-weight: 650; color: #EBCB95; margin-bottom: 3mm; display: block; }
+
+.reasons { counter-reset: r; margin: 0; padding: 0; list-style: none; }
+.reasons li { counter-increment: r; position: relative; padding-left: 10mm; margin-bottom: 3mm; }
+.reasons li::before { content: counter(r); position: absolute; left: 0; top: -1mm; font-family: var(--display); font-size: 19pt; font-weight: 700; color: var(--gold); line-height: 1; }
+.reasons li b { font-family: var(--display); font-size: 12pt; font-weight: 700; display: block; margin-bottom: .3mm; }
+
+/* tables */
+table { width: 100%; border-collapse: collapse; font-size: 7.9pt; line-height: 1.42; }
+table { margin: 3mm 0 4mm; }
+th { font-family: var(--sans); font-size: 6pt; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); text-align: left; font-weight: 650; padding: 2mm 3mm 2mm 0; border-bottom: 0.4mm solid var(--ink); }
+td { padding: 2.4mm 3mm 2.4mm 0; border-bottom: 0.2mm solid var(--rule); vertical-align: top; color: var(--soft); }
+td:first-child { font-family: var(--display); font-weight: 700; font-size: 10.5pt; color: var(--ink); line-height: 1.15; width: 30mm; }
+td .pl { color: var(--ink); font-weight: 600; }
+tr { break-inside: avoid; }
+
+/* roadmap */
+.road { margin: 4mm 0 4mm 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; position: relative; break-inside: avoid; }
+.road .st { padding: 0 2.6mm 0 0; position: relative; }
+.road .st .bar { height: 2.2mm; background: var(--accent); margin-bottom: 3mm; position: relative; }
+.road .st:nth-child(2) .bar { background: #A5463A; } .road .st:nth-child(3) .bar { background: #B8694B; } .road .st:nth-child(4) .bar { background: #C08C5A; } .road .st:nth-child(5) .bar { background: #C9A97A; }
+.road .st .yr { font-family: var(--display); font-weight: 700; font-size: 11.5pt; color: var(--ink); line-height: 1.05; }
+.road .st .nm { font-family: var(--sans); font-size: 6.2pt; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); font-weight: 650; margin: 1.2mm 0 1.4mm; }
+.road .st p { font-size: 7.4pt; line-height: 1.4; color: var(--soft); margin: 0; }
+
+.steps { counter-reset: s; list-style: none; margin: 2mm 0 0; padding: 0; }
+.steps > li { counter-increment: s; position: relative; padding: 0 0 3.2mm 12mm; break-inside: avoid; }
+.steps > li::before { content: counter(s); position: absolute; left: 0; top: 0.2mm; width: 7.4mm; height: 7.4mm; border-radius: 50%; background: var(--accent); color: #F7E7C6; font-family: var(--display); font-weight: 700; font-size: 12pt; display: flex; align-items: center; justify-content: center; line-height: 1; }
+.steps > li > b { display: block; font-family: var(--display); font-size: 13pt; font-weight: 700; line-height: 1.15; margin-bottom: 1mm; color: var(--ink); }
+.steps .where { display: block; font-family: var(--sans); font-size: 6.9pt; color: var(--muted); margin-top: 1.2mm; line-height: 1.45; }
+.steps .where i { font-style: normal; color: var(--accent); font-weight: 600; }
+
+.check { list-style: none; padding: 0; margin: 0; }
+.check li { position: relative; padding-left: 5.2mm; margin-bottom: 1.6mm; }
+.check li::before { content: ""; position: absolute; left: 0; top: 1.1mm; width: 2.6mm; height: 2.6mm; border: 0.3mm solid var(--accent); border-radius: .5mm; }
+
+/* pedigree worksheet */
+.sheet { break-before: page; }
+.sheet h2 { font-family: var(--display); font-size: 27pt; font-weight: 600; margin: 0 0 1mm; }
+.sheet .intro { font-size: 8.6pt; color: var(--soft); margin-bottom: 5mm; max-width: 150mm; }
+.ped { display: grid; grid-template-columns: 16mm 1fr; row-gap: 3.2mm; }
+.ped .gl { font-family: var(--display); font-style: italic; font-weight: 600; color: var(--gold); font-size: 11pt; text-align: right; padding-right: 4mm; padding-top: 3.6mm; }
+.ped .bx { border: 0.3mm solid var(--rule); background: #fff; border-radius: 1.4mm; padding: 2mm 3mm 2.2mm; display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.25fr; gap: 3mm; position: relative; }
+.ped .bx::after { content: ""; position: absolute; left: 50%; bottom: -3.3mm; height: 3.2mm; width: .3mm; background: var(--gold); }
+.ped .bx.last::after { display: none; }
+.ped .f { font-family: var(--sans); font-size: 5.6pt; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 600; border-bottom: 0.25mm solid #CFC4B2; padding-bottom: 7.4mm; }
+.ped .f em { display: block; font-family: var(--display); font-style: normal; font-size: 10.5pt; letter-spacing: 0; text-transform: none; color: var(--accent); font-weight: 700; margin-top: 1mm; }
+.ped .bx.root { background: var(--tint); border-color: var(--gold); }
+.ped .bx.root .f { padding-bottom: 1.2mm; }
+.ped .bx.you { border-color: var(--accent); border-width: .45mm; }
+
+/* sources */
+.sources { font-size: 7.6pt; line-height: 1.45; color: var(--soft); columns: 2; column-gap: 8mm; margin-right: -54mm; }
+.sources p { break-inside: avoid; margin-bottom: 2.2mm; }
+.sources b { color: var(--ink); }
+.sources .u { font-family: var(--sans); font-size: 6.4pt; color: var(--accent); word-break: break-all; }
+.note-box { margin: 5mm -54mm 0 0; padding: 4mm 5mm; border: 0.3mm solid var(--rule); background: #fff; font-size: 7.8pt; color: var(--soft); line-height: 1.5; break-inside: avoid; }
+.note-box b { color: var(--accent); font-family: var(--sans); font-size: 6.2pt; letter-spacing: .16em; text-transform: uppercase; display: block; margin-bottom: 1.2mm; }
+
+.endmark { text-align: center; margin-top: 10mm; }
+.gerd, .profile { margin: 5mm -54mm 0 0; break-inside: avoid; }
+.gerd svg, .profile svg { width: 100%; display: block; }
+.dir { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3mm; margin: 5mm -54mm 0 0; break-inside: avoid; }
+.dir div { border-top: 0.6mm solid var(--gold); background: var(--tint); padding: 2.6mm 3mm 2.8mm; font-size: 7.2pt; line-height: 1.42; color: var(--soft); }
+.dir b { display: block; font-family: var(--display); font-size: 10.5pt; color: var(--ink); line-height: 1.1; margin-bottom: 1mm; font-weight: 700; }
+.dir span { display: block; font-family: var(--sans); font-size: 6.3pt; color: var(--accent); margin-top: 1.2mm; font-weight: 600; }
+.note-full { margin: 4mm 0 0; padding: 3.4mm 4.4mm; background: var(--tint); border-left: 0.9mm solid var(--gold); font-size: 8pt; line-height: 1.5; color: var(--soft); }
+.note-full b.k { font-family: var(--sans); font-size: 6pt; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); margin-right: 2mm; }
+.clear { clear: both; }
+.nobreak { break-inside: avoid; }
+</style>
+</head>
+<body>
+
+<!-- ======================= COVER ======================= -->
+<section class="cover">
+  <div class="frame"></div>
+  <img class="art" src="build/cover_art.svg" alt="">
+  <div class="top">
+    <div class="kicker">A FAMILY HISTORY &nbsp;·&nbsp; <span class="arm">ԸՆՏԱՆԵԿԱՆ ՊԱՏՄՈՒԹՅՈՒՆ</span></div>
+    <h1><span style="display:block">The House</span> of <em>Bdo</em></h1>
+    <div class="armtitle">Բդոյանների պատմությունը</div>
+    <div class="sub">Origins, migration and living history of the Bdoyan family — from the Karin plain to Lake Khanchali and beyond</div>
+  </div>
+  <div class="bottom">
+    <svg class="rosette" width="34" height="34" viewBox="-50 -50 100 100" aria-hidden="true">
+      <g fill="none" stroke="#E8C887" stroke-width="2.4">
+        <circle r="44" opacity=".55"/>
+        <g id="pet"><path d="M0 0 C 10 -14, 10 -30, 0 -40 C -10 -30, -10 -14, 0 0 Z"/></g>
+        <use href="#pet" transform="rotate(45)"/><use href="#pet" transform="rotate(90)"/><use href="#pet" transform="rotate(135)"/>
+        <use href="#pet" transform="rotate(180)"/><use href="#pet" transform="rotate(225)"/><use href="#pet" transform="rotate(270)"/><use href="#pet" transform="rotate(315)"/>
+        <circle r="5" fill="#E8C887"/>
+      </g>
+    </svg>
+    <div class="line" style="margin-top:5mm"></div>
+    <p>KARIN · JAVAKHK · ARMENIA · THE WORLD</p>
+    <p>Prepared for the Bdoyan family · October 2026</p>
+  </div>
+</section>
+
+<!-- ======================= CONTENTS ======================= -->
+<section class="toc-page">
+  <div class="toc-head">CONTENTS &nbsp;·&nbsp; <span class="arm" style="letter-spacing:.1em">ԲՈՎԱՆԴԱԿՈՒԹՅՈՒՆ</span></div>
+  <p class="intro-note">This is the story of one household that became a family name. It begins with a man called Bdo on the high plain of Karin, follows his descendants across a closing frontier in 1829–1830, and ends with a practical guide for every Bdoyan who wants to rebuild the tree, branch by branch, back to him.</p>
+  <div class="toc-grid">
+    <nav class="toc">
+      <a href="#ch1"><span class="n">I</span><span class="t">Bdo of the Karin Plain<small>The founder, his household and the meaning of the name</small></span><span class="p">{{ch1}}</span></a>
+      <a href="#ch2"><span class="n">II</span><span class="t">The Great Exodus, 1829–1830<small>War, a treaty and a journey across the frontier</small></span><span class="p">{{ch2}}</span></a>
+      <a href="#ch3"><span class="n">III</span><span class="t">A New Home on Lake Khanchali<small>Pokr Khanchali, its church and its dialect</small></span><span class="p">{{ch3}}</span></a>
+      <a href="#ch4"><span class="n">IV</span><span class="t">Vard Bdoyan, the Family’s Scholar<small>His life, his work and what he wrote</small></span><span class="p">{{ch4}}</span></a>
+      <a href="#ch5"><span class="n">V</span><span class="t">One Ancestor, One Family<small>Why every Bdoyan descends from Bdo</small></span><span class="p">{{ch5}}</span></a>
+      <a href="#ch6"><span class="n">VI</span><span class="t">Where the Bdoyans Live Today<small>Maps of the family’s spread and likely centres</small></span><span class="p">{{ch6}}</span></a>
+      <a href="#ch7"><span class="n">VII</span><span class="t">Finding the Exact Family Tree<small>Archives, records, DNA and a step-by-step plan</small></span><span class="p">{{ch7}}</span></a>
+      <a href="#sheet"><span class="n">✦</span><span class="t">Worksheet: Your Line Back to Bdo<small>A printable chart to fill in</small></span><span class="p">{{sheet}}</span></a>
+      <a href="#sources"><span class="n">✦</span><span class="t">Sources and Notes</span><span class="p">{{sources}}</span></a>
+    </nav>
+    <aside class="glance">
+      <div class="h5">AT A GLANCE</div>
+      <ul class="tl">
+        <li class="key"><b>c. 1740–1780</b>Bdo born; head of a household on the Karin plain <span class="sm">(estimate)</span></li>
+        <li><b>1828–1829</b>Russo-Turkish war; Russian army takes Kars, Akhalkalaki, Akhaltsikhe and, in 1829, Erzurum</li>
+        <li><b>14 Sept 1829</b>Treaty of Adrianople hands Karin back to the Ottomans</li>
+        <li class="key"><b>1829–1830</b>Mass exodus from Karin; Bdo’s descendants help settle Pokr Khanchali</li>
+        <li><b>1840 · 1864 · 1875</b>Village church first recorded; parish school opens; St Hakob rebuilt in stone</li>
+        <li class="key"><b>4 March 1910</b>Vard Harutyuni Bdoyan born in Pokr Khanchali</li>
+        <li><b>1938–1980s</b>Vard Bdoyan’s career as an ethnographer in Yerevan</li>
+        <li><b>20th–21st c.</b>Branches spread to Armenia, Tbilisi, Russia and the West</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<!-- ======================= I ======================= -->
+<section class="chapter" id="ch1">
+<div class="main">
+  <header class="opener"><div class="big">I</div><div class="no">Chapter I <span>THE FOUNDER</span></div><h2>Bdo of the Karin Plain</h2><div class="hy">Բդո՝ Կարնո դաշտից</div></header>
+
+  <p class="lead">Every Armenian surname is a small history. <em>Bdoyan</em> — <span class="arm">Բդոյան</span> — is the name of one man’s household, carried for more than two centuries across two empires, three modern countries and, today, several continents.</p>
+
+  <aside class="side box"><span class="k">The name</span><span class="hyw">Բդո + -յան = Բդոյան</span><br>The Armenian ending <i>-yan</i> (older <i>-ean</i>) means “of” or “belonging to the line of”. <b>Bdoyan</b> therefore simply means <i>“of Bdo’s family”</i>. In village speech the household would also be called by a collective form such as <span class="hyw">Բդոենք</span> — “Bdo’s people”.</aside>
+
+  <p class="dropcap">The story begins on the plain of <strong>Karin</strong> — today’s Erzurum in eastern Turkey. It is a broad, almost treeless upland at close to 1,900 metres, ringed by mountains and drained by the headwaters of the Euphrates. For centuries it was the heart of <em>Bardzr Hayk</em>, “High Armenia”, and its fields were worked from Armenian farming villages. At the start of the nineteenth century there were roughly a hundred of them on the plain alone.</p>
+
+  <p>Family tradition places Bdo’s home in one of these villages: <strong>Dinarigom</strong> (<span class="arm">Դինարիգոմ</span>). The village is real. It still appears, spelled <span class="arm">Դինարգոմ</span> (Dinargom), in the 1909 list of the forty-eight Armenian villages of the Karin district printed in the <em>Soviet Armenian Encyclopedia</em> — evidence that Armenians who did not leave in 1829 went on living there for another eighty years.</p>
+
+  <h3>Who was Bdo?</h3>
+  <p>No document yet found carries Bdo’s name, and nothing written in his own hand survives. What we can say comes from the name itself and from how Armenian village society worked.</p>
+  <p><strong>Bdo</strong> is a short, affectionate form of a fuller baptismal name. Family memory sometimes links it to <em>Baghdasar</em> or to <em>Petros (Bedros)</em>; only a church register naming one of his sons as “son of …” could settle which. Pet forms like this were how neighbours actually spoke, and they often outlived the formal name.</p>
+
+  <aside class="side"><span class="k">Dating Bdo</span>Vard Bdoyan was born in 1910, son of Harutyun. At about 28–32 years per generation, counting back five or six steps from Vard places Bdo’s birth somewhere around <b>1740–1780</b>. His sons and grandsons were the generation that made the journey of 1829–1830.</aside>
+
+  <p>More telling is that his name, rather than his father’s or his son’s, became the family’s for good. In the villages of the Armenian Highlands a family line was usually called after the head of household whose authority and number of descendants made that house stand out. When the household divided, each branch still answered to that founder’s name. That Bdo became such a name-giver tells us he was the respected <strong>tanuter</strong> (<span class="arm">տանուտեր</span>), the master of the house, of a large and lasting family.</p>
+
+  <h3>Life in a patriarchal household</h3>
+  <aside class="side box"><span class="k">Words of the household</span>
+    <dl>
+      <dt>գերդաստան · gerdastan</dt><dd>the large patriarchal family of several generations under one roof</dd>
+      <dt>տանուտեր · tanuter</dt><dd>master of the house; senior male head</dd>
+      <dt>տանտիկին · tantikin</dt><dd>mistress of the house; she ran stores, kitchen and daughters-in-law</dd>
+      <dt>յոթ պորտ · yot port</dt><dd>“seven navels” — the seven generations of ancestors one was expected to know</dd>
+    </dl>
+  </aside>
+  <p>Bdo’s family would have lived as a <strong>gerdastan</strong> (<span class="arm">գերդաստան</span>): married sons stayed under their father’s roof with their wives and children, so that three or four generations, often several dozen people, shared one hearth, one store of grain and one set of fields. Authority ran from the eldest man down; daughters married out into other houses, and brides came in.</p>
+  <p>This is not guesswork borrowed from elsewhere. It is the way of life that Bdo’s own descendant, the ethnographer <strong>Vard Bdoyan</strong>, spent his career describing (see Chapter IV). He showed that such great households survived across the Armenian Highlands right up to the late nineteenth and early twentieth centuries, and that the villages themselves were built in clustered quarters of joined houses — the physical shape of clan loyalty and of communities that had to defend themselves.</p>
+  <p>On the Karin plain that life meant spring ploughing with heavy wooden ploughs drawn by teams of oxen, wheat and barley harvested in a short summer, flocks taken to the uplands, and long winters when people and animals sheltered in the same half-sunken stone buildings for warmth. It was a hard, close-knit and self-reliant world. In 1828 it was overtaken by war.</p>
+  <div class="gerd">
+    <svg viewBox="0 0 680 352" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+      <text x="0" y="13" font-size="9.5" letter-spacing="2" fill="#8E2C2C" font-weight="650">HOW A GERDASTAN WORKED</text>
+      <text x="0" y="40" font-family="Cormorant Garamond" font-size="22" font-weight="600" fill="#2A2420">One roof, one hearth, three or four generations</text>
+      <line x1="0" y1="54" x2="680" y2="54" stroke="#DCD2C2" stroke-width="1"/>
+      <g stroke="#A9813F" stroke-width="1.4" fill="none" opacity=".85">
+        <path d="M340 122 V140 M85 140 H595 M85 140 V152 M255 140 V152 M425 140 V152 M595 140 V152"/>
+        <path d="M85 208 V222 M255 208 V222 M425 208 V222 M595 208 V222 M85 222 H595 M340 222 V232"/>
+      </g>
+      <rect x="225" y="68" width="230" height="54" rx="6" fill="#8E2C2C"/>
+      <text x="340" y="92" text-anchor="middle" font-family="Cormorant Garamond" font-size="19" font-weight="700" fill="#F7E7C6">Tanuter &amp; Tantikin</text>
+      <text x="340" y="110" text-anchor="middle" font-size="9.5" fill="#EBCB95">the eldest man and his wife · e.g. Bdo</text>
+      <g text-anchor="middle">
+        <rect x="10" y="152" width="150" height="56" rx="6" fill="#fff" stroke="#DCD2C2" stroke-width="1.2"/>
+        <rect x="180" y="152" width="150" height="56" rx="6" fill="#fff" stroke="#DCD2C2" stroke-width="1.2"/>
+        <rect x="350" y="152" width="150" height="56" rx="6" fill="#fff" stroke="#DCD2C2" stroke-width="1.2"/>
+        <rect x="520" y="152" width="150" height="56" rx="6" fill="#fff" stroke="#DCD2C2" stroke-width="1.2"/>
+        <g font-family="Cormorant Garamond" font-size="16.5" font-weight="700" fill="#2A2420">
+          <text x="85" y="177">1st son + bride</text><text x="255" y="177">2nd son + bride</text><text x="425" y="177">3rd son + bride</text><text x="595" y="177">Younger sons</text>
+        </g>
+        <g font-size="9.5" fill="#7A6F64">
+          <text x="85" y="196">married sons stay home</text><text x="255" y="196">brides (հարս) join the house</text><text x="425" y="196">all work the shared land</text><text x="595" y="196">until they marry</text>
+        </g>
+      </g>
+      <rect x="10" y="232" width="660" height="40" rx="6" fill="#F4EDE1" stroke="#E6DBC8" stroke-width="1.2"/>
+      <text x="340" y="258" text-anchor="middle" font-family="Cormorant Garamond" font-size="17" font-weight="700" fill="#2A2420">Grandchildren — the next generation of the house</text>
+      <g font-size="10" fill="#4A423B">
+        <text x="10" y="300" font-size="9" letter-spacing="1.6" font-weight="650" fill="#8E2C2C">SHARED</text>
+        <text x="10" y="317">one hearth (թոնիր), one granary,</text><text x="10" y="331">one purse, common fields and flocks</text>
+        <text x="245" y="300" font-size="9" letter-spacing="1.6" font-weight="650" fill="#8E2C2C">MOVEMENT</text>
+        <text x="245" y="317">daughters marry out to other houses;</text><text x="245" y="331">brides marry in from other villages</text>
+        <text x="480" y="300" font-size="9" letter-spacing="1.6" font-weight="650" fill="#8E2C2C">WHEN IT DIVIDED</text>
+        <text x="480" y="317">every branch kept the founder’s</text><text x="480" y="331">name: “Bdo’s people”, the Bdoyans</text>
+      </g>
+    </svg>
+  </div>
+</div>
+</section>
+
+<!-- ======================= II ======================= -->
+<section class="chapter" id="ch2">
+<div class="main">
+  <header class="opener"><div class="big">II</div><div class="no">Chapter II <span>THE JOURNEY</span></div><h2>The Great Exodus, 1829–1830</h2><div class="hy">Կարնեցիների մեծ գաղթը</div></header>
+
+  <p class="lead">Between autumn 1829 and 1830, tens of thousands of Armenians left the Karin plain behind. Among them were Bdo’s sons and grandsons.</p>
+
+  <aside class="side box"><span class="k">In numbers</span>
+    <b style="font-family:var(--display);font-size:17pt;color:var(--accent);line-height:1">75,000–90,000</b><br>Armenians estimated to have left Erzurum province with the Russian army, most of them from Karin itself.<br><br>
+    <b style="font-family:var(--display);font-size:17pt;color:var(--accent);line-height:1">35,000–40,000</b><br>of them settled in Javakhk and the neighbouring districts of Akhaltsikhe and Tsalka.<br><br>
+    <b style="font-family:var(--display);font-size:17pt;color:var(--accent);line-height:1">≈ 50</b><br>Armenian villages left on the Karin plain by the end of the 19th century, against about 100 at its start.</aside>
+
+  <p class="dropcap">In the Russo-Turkish War of 1828–1829 the Russian Caucasus army under General Ivan Paskevich swept into the Ottoman borderlands. Kars fell in the summer of 1828, followed by Akhalkalaki and Akhaltsikhe; in the summer of 1829 the army entered Erzurum itself. For the Armenians of Karin, who had welcomed and supplied the Russian troops, it seemed that Christian rule had arrived to stay.</p>
+  <p>It had not. By the <strong>Treaty of Adrianople</strong>, signed on 14 September 1829, Russia kept the districts of Akhalkalaki and Akhaltsikhe — the region Armenians call <strong>Javakhk</strong> — but handed Erzurum, Kars and Bayazet back to the Sultan. Fearing reprisals, and encouraged by the Russian authorities who wanted settlers for their new frontier lands, the Armenians of the province chose to leave with the withdrawing army.</p>
+  <p>The emigration was led by the Armenian prelate of Erzurum, <strong>Archbishop Karapet Bagratuni</strong>. Whole villages packed what they could onto ox-carts — grain, tools, bedding, livestock, the vestments and books of their churches — and moved north-east in columns over the mountain roads toward Kars and the new Russian frontier. Families travelled together and, wherever they could, settled together; a village that left as one community tried to rebuild itself as one community.</p>
+  <p>For the people of Dinarigom and their neighbours, the road led to the high, half-empty plateau of Javakheti, around the lakes of Khanchali and Paravani. Decades of border warfare had left much of it thinly settled, and the Russian administration directed the newcomers there to farm it.</p>
+
+  <figure class="wide">
+    <img src="build/map1_exodus.svg" alt="Map of the 1829–1830 migration from Karin to Pokr Khanchali">
+    <figcaption><b>Map 1</b><span>The exodus from Karin, 1829–1830. The red line shows the most probable route taken by Bdo’s descendants, via Kars to the shore of Lake Khanchali — about 260 km in straight stages and considerably more on the mountain roads. Gold lines show other destinations of Karin migrants. The frontier is drawn approximately; it held until Russia annexed Kars and Ardahan in 1878.</span></figcaption>
+  </figure>
+
+  <p>The move was not just a change of country. Karin and Javakheti lie at almost the same height — about 1,900 metres against 1,950 — with the same short summers, deep snows and open, windswept fields. The migrants brought their ploughs, seed, customs and dialect, and much of that life could be lived again on the new plateau. That continuity is one reason the families of Javakhk kept their Karin identity so strongly, and why the Karin dialect is still spoken there today.</p>
+  <div class="profile">
+    <svg viewBox="0 0 680 212" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+      <defs><linearGradient id="gr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C9A97A" stop-opacity=".55"/><stop offset="1" stop-color="#C9A97A" stop-opacity=".05"/></linearGradient></defs>
+      <text x="0" y="13" font-size="9.5" letter-spacing="2" fill="#8E2C2C" font-weight="650">SAME HEIGHT, SAME LIFE</text>
+      <text x="0" y="40" font-family="Cormorant Garamond" font-size="22" font-weight="600" fill="#2A2420">The road from one high plain to another</text>
+      <line x1="0" y1="54" x2="680" y2="54" stroke="#DCD2C2" stroke-width="1"/>
+      <g transform="translate(0,22)">
+        <g stroke="#DCD2C2" stroke-width=".8" stroke-dasharray="2 3"><line x1="44" y1="156.8" x2="680" y2="156.8"/><line x1="44" y1="100.8" x2="680" y2="100.8"/><line x1="44" y1="56.0" x2="680" y2="56.0"/></g>
+        <g font-size="8.5" fill="#7A6F64"><text x="0" y="158.9">1,400 m</text><text x="0" y="102.9">1,900 m</text><text x="0" y="58.1">2,300 m</text></g>
+        <path d="M50 101.5 C 80 101.5, 110 121.8, 150 130.2 C 190 137.2, 215 139.3, 235 135.8 C 270 114.8, 300 65.8, 330 63.0 C 360 61.6, 385 93.8, 410 109.2 C 440 121.8, 470 114.8, 500 102.2 C 540 92.4, 590 95.2, 640 95.9 L 640 156.8 L 50 156.8 Z" fill="url(#gr)"/>
+        <path d="M50 101.5 C 80 101.5, 110 121.8, 150 130.2 C 190 137.2, 215 139.3, 235 135.8 C 270 114.8, 300 65.8, 330 63.0 C 360 61.6, 385 93.8, 410 109.2 C 440 121.8, 470 114.8, 500 102.2 C 540 92.4, 590 95.2, 640 95.9" fill="none" stroke="#8E2C2C" stroke-width="2.6" stroke-linecap="round"/>
+        <g fill="#2A2420"><circle cx="50" cy="101.5" r="5.5" fill="#8E2C2C"/><circle cx="150" cy="130.2" r="3.6"/><circle cx="235" cy="135.8" r="3.6"/><circle cx="330" cy="63.0" r="3.6"/><circle cx="410" cy="109.2" r="3.6"/><circle cx="640" cy="95.9" r="6" fill="#8E2C2C"/></g>
+        <g font-size="9.5" fill="#2A2420">
+          <text x="44" y="80" font-family="Cormorant Garamond" font-size="16" font-weight="700" fill="#8E2C2C">Karin plain</text><text x="44" y="92" fill="#4A423B" font-size="8.8">≈ 1,900 m</text>
+          <text x="150" y="144.2" text-anchor="middle">Hasankale</text>
+          <text x="235" y="149.8" text-anchor="middle">Horasan · Aras valley</text>
+          <text x="330" y="52" text-anchor="middle">Soğanlı mountains · Sarıkamış <tspan fill="#4A423B" font-size="8.8">· over 2,000 m</tspan></text>
+          <text x="402" y="124" text-anchor="end">Kars</text><text x="402" y="134" text-anchor="end" fill="#4A423B" font-size="8.8">≈ 1,770 m</text>
+          <text x="652" y="74" text-anchor="end" font-family="Cormorant Garamond" font-size="16" font-weight="700" fill="#8E2C2C">Pokr Khanchali</text><text x="652" y="86" text-anchor="end" fill="#4A423B" font-size="8.8">≈ 1,950 m</text>
+        </g>
+        <text x="680" y="175.0" text-anchor="end" font-size="8" fill="#7A6F64">Schematic profile along the probable route · heights approximate · distances not to scale</text>
+      </g>
+    </svg>
+  </div>
+</div>
+</section>
+
+<!-- ======================= III ======================= -->
+<section class="chapter" id="ch3">
+<div class="main">
+  <header class="opener"><div class="big">III</div><div class="no">Chapter III <span>THE VILLAGE</span></div><h2>A New Home on Lake Khanchali</h2><div class="hy">Փոքր Խանչալի · Ջավախք</div></header>
+
+  <p class="lead">On the south-western shore of a shallow upland lake, the migrants from Karin founded the village that would be the Bdoyans’ home for the next two centuries: Pokr Khanchali.</p>
+
+  <aside class="side box"><span class="k">Pokr Khanchali today</span>
+    <b>Armenian:</b> <span class="hyw">Փոքր Խանչալի</span> (“Little Khanchali”)<br>
+    <b>Georgian:</b> პატარა ხანჩალი (Patara Khanchali)<br>
+    <b>Country:</b> Georgia, Samtskhe-Javakheti region, Ninotsminda municipality<br>
+    <b>Location:</b> about 5.5 km south-west of Ninotsminda (formerly Bogdanovka)<br>
+    <b>Altitude:</b> about 1,930–1,980 m<br>
+    <b>Sister village:</b> Mets (Didi) Khanchali, on the same lake<br>
+    <b>Settled:</b> 1829–1830, by Armenians from Karin</aside>
+
+  <p class="dropcap"><strong>Pokr Khanchali</strong> — “Little Khanchali”, to distinguish it from its larger neighbour Mets Khanchali across the lake — lies on the Javakheti volcanic plateau in today’s Georgia, close to the Armenian border. Pokr Khanchali was settled in 1829–1830 by families from the Karin area, as were most Armenian villages around it, and it has remained an Armenian village ever since. Within the village, the Bdoyans are remembered as one of the founding families.</p>
+
+  <h3>The church of St Hakob</h3>
+  <p>A village of Karin Armenians was organised around its church. The parish of Pokr Khanchali is already recorded in the 1840 bulletin of the Armenian diocese of Georgia and Imereti. In the 1860s its church was still a modest wooden building; in 1875 the villagers rebuilt it in hewn stone as the church of <strong>Surb Hakob</strong> (<span class="arm">Սուրբ Հակոբ</span>, St James), and that September it was consecrated by Archbishop Grigor Sakinyants. A parish school had opened in 1864, funded by the community. The village cemetery lies around the church.</p>
+
+  <aside class="side"><span class="k">St Hakob, step by step</span>
+    <ul class="check" style="margin-top:1mm">
+      <li><b>1840</b> — parish recorded in the diocesan bulletin</li>
+      <li><b>1864</b> — parish school opens</li>
+      <li><b>1860s</b> — still a wooden church</li>
+      <li><b>1875</b> — rebuilt in stone; consecrated in September</li>
+      <li><b>Soviet era</b> — closed and left to decay</li>
+      <li><b>Today</b> — restored and active</li>
+    </ul>
+  </aside>
+
+  <p>That church matters to anyone tracing the family. For almost ninety years, from the 1830s to the Soviet period, its priests wrote down every baptism, marriage and burial in the village. Those registers are the most direct written trail from today’s Bdoyans back to the families who arrived in 1830 (see Chapter VII). The gravestones around the church are a second record, carved in stone.</p>
+
+  <h3>The surname becomes official</h3>
+  <p>In Karin, people were known by their own name, their father’s name and their house. Under Russian rule the authorities began to list every household, its head and his sons in registers, censuses and family lists. Over the course of the nineteenth century the old house-names hardened into fixed surnames written on every document. That is how “Bdo’s people” became, permanently and officially, the <strong>Bdoyan</strong> family.</p>
+
+  <h3>A dialect carried from Karin</h3>
+  <aside class="side box"><span class="k">A few Karin words</span>
+    <dl>
+      <dt>էխտյար</dt><dd>old man, elder</dd>
+      <dt>թոն</dt><dd>rain</dd>
+      <dt>ճիտ</dt><dd>neck</dd>
+      <dt>էնթուեն</dt><dd>from here</dd>
+      <dt>տորի</dt><dd>until</dd>
+    </dl>
+  </aside>
+  <p>The settlers brought their speech with them. The <strong>Karin (Karno) dialect</strong> (<span class="arm">Կարնո բարբառ</span>), once spoken from Kars to Baberd with Erzurum at its centre, survives today mainly in Javakhk — in Akhalkalaki, Ninotsminda and their villages. When older people in Pokr Khanchali speak the village tongue, they are still using the words of the Karin plain that Bdo knew.</p>
+  <p>Life in Pokr Khanchali followed the rhythm the families had known in Karin: grain and potatoes on the high fields, cattle and sheep, long winters, and the gerdastan household slowly giving way, by the early twentieth century, to smaller families. Into one of those families, in 1910, was born the man who would become the Bdoyans’ best-known son.</p>
+  <div class="pull"><p>When the elders of Pokr Khanchali speak the village tongue, they are still using the words of the Karin plain that Bdo knew.</p><div class="src">Two centuries, one dialect</div></div>
+</div>
+</section>
+
+<!-- ======================= IV ======================= -->
+<section class="chapter" id="ch4">
+<div class="main">
+  <header class="opener"><div class="big">IV</div><div class="no">Chapter IV <span>THE SCHOLAR</span></div><h2>Vard Bdoyan, the Family’s Scholar</h2><div class="hy">Վարդ Հարությունի Բդոյան</div></header>
+
+  <div class="facts">
+    <div><div class="v">1910</div><div class="l">born 4 March in Pokr Khanchali, to a farming family</div></div>
+    <div><div class="v">1969</div><div class="l">doctorate: Doctor of Historical Sciences</div></div>
+    <div><div class="v">14</div><div class="l">monographs published or prepared, and 50+ articles</div></div>
+    <div><div class="v">200+</div><div class="l">printer’s sheets of field notes gathered across Armenia and Georgia</div></div>
+  </div>
+
+  <p class="lead">The best-known Bdoyan is the ethnographer and folklorist Vard Harutyuni Bdoyan — a son of Pokr Khanchali who spent his life recording exactly the kind of village world his ancestor Bdo had lived in.</p>
+
+  <aside class="side box"><span class="k">Major works</span>
+    <ol style="padding-left:3.6mm">
+      <li><i>The Cult of Land and Child Fertility among Armenians</i> — thesis 1948, part published 1950</li>
+      <li><i>Armenian Folk Games</i>, three-volume collection and study (1963)</li>
+      <li><i>Agricultural Culture in Armenia</i> (1972), with a German summary in Hungary the same year</li>
+      <li><i>Armenian Ethnography: A Brief Outline</i> (1974) — for over thirty years the only university textbook of Armenian ethnography</li>
+      <li><i>Armenian Salt-Cellars</i> (1986)</li>
+    </ol>
+  </aside>
+
+  <p class="dropcap">Vard Bdoyan was born on <strong>4 March 1910</strong> in Pokr Khanchali, into a farming family. He went to school in the village, finished the pedagogical college in Akhalkalaki in 1932 and taught in secondary schools from 1933 to 1937 before settling in Yerevan, where he completed the Pedagogical Institute by correspondence in 1943.</p>
+
+  <div class="career">
+    <div><span>1938</span><span>Begins collecting folklore for the Armenian branch of the USSR Academy of Sciences</span></div>
+    <div><span>1939–44</span><span>Librarian and manuscript specialist at the Matenadaran</span></div>
+    <div><span>1944–59</span><span>Researcher, then head (from 1949) of the ethnography department of the State History Museum of Armenia</span></div>
+    <div><span>1948</span><span>Defends his candidate dissertation under Professor Stepan Lisitsyan</span></div>
+    <div><span>1959</span><span>Senior researcher at the new Institute of Archaeology and Ethnography, where he worked for the rest of his life</span></div>
+    <div><span>1964–72</span><span>Teaches Armenian ethnography at Yerevan State University</span></div>
+    <div><span>1969</span><span>Doctoral dissertation: <i>Agricultural Culture in Armenia</i></span></div>
+  </div>
+
+  <p>He never lost touch with home: in 1961 he gave some 300 objects to the regional museum of Akhalkalaki, and he argued in print that Javakhk deserved a museum of its own.</p>
+
+  <h3>What Vard Bdoyan said</h3>
+  <p>Vard Bdoyan’s ideas speak directly to the Bdoyan story. Here are five of them, drawn from his published work as summarised by the ethnographer Rafik Nahapetyan on his centenary in 2010.</p>
+</div>
+
+<div class="cards">
+  <div class="card span2">
+    <div class="tag">On ancestors</div>
+    <p class="q">“There is no people whose later art of dress is not directly connected with the art of its ancestors.”</p>
+    <p class="arm" style="font-size:7.6pt;color:var(--muted)">«Չկա ժողովուրդ, որը տարազի ուշ շրջանի արվեստով անմիջականորեն կապված չլինի իր նախնիների արվեստի հետ»</p>
+    <p>His conviction that the present is always tied to the ancestors runs through all his work. He traced each region’s costume back to the ancient peoples of the Armenian Highlands and rejected the claim that Armenian dress was simply borrowed from neighbours.</p>
+  </div>
+  <div class="card">
+    <div class="tag">On the great household</div>
+    <div class="ch">The gerdastan lasted for centuries</div>
+    <p>He traced the patriarchal great family to the rise of the father-centred clan, and showed how it survived through the feudal centuries before breaking up only in the late 19th and early 20th centuries — the very world Bdo’s family lived in.</p>
+  </div>
+  <div class="card">
+    <div class="tag">On kinship words</div>
+    <div class="ch">Native words for “kin”</div>
+    <p>He held that the words for a blood-kin group, <span class="arm">արյունառու</span> (<i>aryunaru</i>) and <span class="arm">ցեղ</span> (<i>tsegh</i>), are native Armenian, while <span class="arm">ազգ</span> (<i>azg</i>) and <span class="arm">տոհմ</span> (<i>tohm</i>) came from Pahlavi and Persian. Through these terms he followed the links between the wider clan and the family line.</p>
+  </div>
+  <div class="card">
+    <div class="tag">On the village</div>
+    <div class="ch">Houses built for kin and defence</div>
+    <p>The Armenian village of attached quarters and joined houses, which lasted into the 20th century, was in his view the product of two forces: clan tradition on one side and communities defending themselves under hostile rulers on the other.</p>
+  </div>
+  <div class="card">
+    <div class="tag">On hidden memory</div>
+    <div class="ch">Old beliefs survive in disguise</div>
+    <p>His “theory of disguise” held that ancient beliefs did not vanish with Christianity but lived on in hidden forms. The female-shaped clay salt-cellars of Armenian homes, he argued, still carried the image of the old goddess Anahit, protector of mother and child.</p>
+  </div>
+</div>
+
+<div class="main">
+  <h3>The chapter he did not publish</h3>
+  <p>His most important work for the family may be the work that never appeared. His archive held about 130 printer’s sheets ready for print, including two large studies of his homeland, <em>The Ethnography of Javakhk</em> and <em>The Folklore of Javakhk</em> (<span class="arm">«Ջավախքի ազգագրությունը», «Ջավախքի բանահյուսությունը»</span>). Some 20 sheets of the folklore went to the Hayastan publishing house in 1986, in his lifetime, but were still unpublished in 2010. The sources readable today do not quote him on Bdo by name; if he wrote down who founded Pokr Khanchali and where they came from, it is in these manuscripts. Finding them is a key step in Chapter VII.</p>
+</div>
+</section>
+
+<!-- ======================= V ======================= -->
+<section class="chapter" id="ch5">
+<div class="main">
+  <header class="opener"><div class="big">V</div><div class="no">Chapter V <span>THE BLOODLINE</span></div><h2>One Ancestor, One Family</h2><div class="hy">Մեկ նախահայր, մեկ ընտանիք</div></header>
+
+  <div class="statement">
+    <span class="k">THE CORE OF THE FAMILY STORY</span>
+    <p>Every Bdoyan is a descendant of Bdo. The name itself is the record: Bdoyan means “of Bdo”.</p>
+    <p class="hy">Բոլոր Բդոյանները Բդոյի ժառանգներն են։</p>
+  </div>
+
+  <p class="lead">Common surnames like Grigoryan or Hakobyan arose independently in hundreds of places, from hundreds of unrelated men named Grigor or Hakob. Bdoyan is different.</p>
+
+  <ol class="reasons">
+    <li><b>The name points to one man.</b>A surname built on a nickname like Bdo, rather than on a common saint’s name, belongs to a particular person. Bdoyan is the name of one household, not a common pattern.</li>
+    <li><b>One village, one house.</b>It grew out of a single gerdastan in Dinarigom on the Karin plain, where “Bdo’s people” were a recognised house.</li>
+    <li><b>They moved together and stayed together.</b>The family crossed the frontier as a group in 1829–1830 and put down roots in one village, Pokr Khanchali, where the name became fixed in Russian records.</li>
+    <li><b>The name is rare.</b>Bdoyans are few in number, and as far as the family knows, almost all trace their roots to Javakhk or to people who left it.</li>
+  </ol>
+  <p>So the Bdoyans are not simply people who share a name. They are one extended family, cousins of one another at greater or lesser distance, all descended in the male line from Bdo. His blood also runs in many families with other surnames, through the daughters of each generation who married into other houses.</p>
+  <aside class="side box"><span class="k">Proving it with DNA</span>Because a Y-chromosome passes almost unchanged from father to son, Bdoyan men from different branches should share Bdo’s Y-DNA signature. Testing two or three men from distant branches would confirm the family’s single origin scientifically and would show Bdo’s deep ancestral lineage in the Armenian Highlands.</aside>
+
+  <h3>About ten generations from Bdo</h3>
+  <p>Counting about thirty years to a generation, a Bdoyan child born today stands nine or ten generations below the founder. The ladder below shows how those generations line up with history. Names other than Bdo, Harutyun and Vard are left for the family to fill in from records and memory.</p>
+</div>
+
+<div class="ladder">
+  <div class="rung root"><div class="g">I</div><div class="node">Bdo<small>c. 1740–1780 · Karin</small></div><div class="d"><b>The founder.</b> Head of a great household in Dinarigom on the Karin plain.</div></div>
+  <div class="rung"><div class="g">II–III</div><div class="node">Sons &amp; grandsons<small>born c. 1770–1820</small></div><div class="d"><b>The migrants.</b> Leave Karin in 1829–1830 and help found Pokr Khanchali.</div></div>
+  <div class="rung"><div class="g">IV</div><div class="node">First born in Javakhk<small>c. 1830–1860</small></div><div class="d">Raised under Russian rule; appear in the first registers and family lists.</div></div>
+  <div class="rung hi"><div class="g">V</div><div class="node">Harutyun<small>c. 1860–1890</small></div><div class="d"><b>Vard Bdoyan’s father</b>, and his cousins. Baptised in St Hakob church.</div></div>
+  <div class="rung hi"><div class="g">VI</div><div class="node">Vard<small>b. 1910</small></div><div class="d"><b>Vard Bdoyan</b>, the ethnographer, and his generation; the first to study and work in Yerevan.</div></div>
+  <div class="rung"><div class="g">VII–VIII</div><div class="node">Soviet generations<small>c. 1930–1980</small></div><div class="d">Spread to Yerevan, Gyumri, Tbilisi and Russian cities.</div></div>
+  <div class="rung"><div class="g">IX–X</div><div class="node">Today<small>born c. 1980–2020s</small></div><div class="d">Living Bdoyans, in Javakhk, Armenia, Russia, Europe and America.</div></div>
+</div>
+<div class="main"><p class="sm" style="color:var(--muted)">Generation dates are estimates. Vard Bdoyan’s exact place in the line (fifth, sixth or seventh from Bdo) can only be fixed from the records described in Chapter VII.</p></div>
+</section>
+
+<!-- ======================= VI ======================= -->
+<section class="chapter" id="ch6">
+<div class="main">
+  <header class="opener"><div class="big">VI</div><div class="no">Chapter VI <span>THE FAMILY TODAY</span></div><h2>Where the Bdoyans Live Today</h2><div class="hy">Բդոյաններն այսօր</div></header>
+
+  <p class="lead">For a century after 1830 the family stayed rooted in Pokr Khanchali. Then, in the twentieth century, education, work and upheaval carried its branches outward — first to Armenia and Tbilisi, then deep into Russia, and finally overseas.</p>
+
+  <p class="dropcap">The pattern followed the paths taken by Javakhk Armenians in general. In the Soviet decades young people went to <strong>Yerevan</strong> to study and stayed for work; Vard Bdoyan, who moved there in the 1930s, is the clearest example. Others settled just across the border in <strong>Gyumri</strong> and the towns of Shirak, or in <strong>Tbilisi</strong>, the capital of their own republic. From the 1960s many Javakhk men went to work seasonally in southern Russia, and whole families followed them to <strong>Krasnodar</strong>, <strong>Sochi</strong>, <strong>Rostov</strong>, <strong>Stavropol</strong> and the spa towns. After 1991, economic collapse pushed a new wave to <strong>Moscow</strong> and to Europe and North America.</p>
+
+  <h3>The main centres</h3>
+</div>
+<div>
+  <table>
+    <thead><tr><th>Region</th><th>Places</th><th>Why the family went there</th><th style="width:22mm">Since</th></tr></thead>
+    <tbody>
+      <tr><td>Ancestral heartland</td><td><span class="pl">Pokr Khanchali</span>, Ninotsminda, Akhalkalaki (Javakhk, Georgia)</td><td>The founding village: family houses, land, St Hakob church and the family graves</td><td>1829–30</td></tr>
+      <tr><td>Republic of Armenia</td><td><span class="pl">Yerevan</span>, Gyumri, Abovyan, Vagharshapat</td><td>University, academic and professional careers, industry; the easiest move across the border</td><td>1930s</td></tr>
+      <tr><td>Georgia beyond Javakhk</td><td><span class="pl">Tbilisi</span>, Tsalka</td><td>The republic’s capital; jobs, study, administration</td><td>20th c.</td></tr>
+      <tr><td>Southern Russia</td><td><span class="pl">Krasnodar</span>, Sochi, Armavir, Rostov-on-Don, Stavropol, Pyatigorsk</td><td>Seasonal building and farm work that turned into permanent settlement; large Javakhk communities</td><td>1960s–90s</td></tr>
+      <tr><td>Moscow and large Russian cities</td><td><span class="pl">Moscow</span>, St Petersburg</td><td>Trade, construction, medicine and higher education</td><td>1970s</td></tr>
+      <tr><td>Western diaspora</td><td>USA (<span class="pl">Los Angeles, Glendale</span>), France, Germany, Belgium</td><td>Emigration after the fall of the USSR, often via Armenia or Russia</td><td>1990s</td></tr>
+    </tbody>
+  </table>
+</div>
+</section>
+
+<section class="chapter" style="break-before:page">
+<div class="main">
+  <figure class="wide" style="margin-top:0">
+    <img src="build/map2_dispersal.svg" alt="Map of Bdoyan dispersal from Javakhk to Armenia and Russia">
+    <figcaption><b>Map 2</b><span>From Javakhk outward. The 20th-century movement of Pokr Khanchali families toward Armenia, Tbilisi, southern Russia and Moscow. Larger red circles are the main centres of Javakhk migration and so the most likely homes of large Bdoyan families; gold circles are other likely centres. The centres are indicative — drawn from the documented migration routes of Javakhk Armenians, not from a census — so each family can mark its own branches.</span></figcaption>
+  </figure>
+</div>
+</section>
+
+<section class="chapter" style="break-before:page">
+<div class="main">
+  <figure class="wide" style="margin-top:0">
+    <img src="build/map3_heartland.svg" alt="Detailed map of Javakhk and Armenia">
+    <figcaption><b>Map 3</b><span>The heartland in detail. Pokr Khanchali on Lake Khanchali, the towns of Javakhk, and the Armenian cities that received most families from the village. The tinted oval marks the core of Javakhk.</span></figcaption>
+  </figure>
+  <figure class="wide">
+    <img src="build/map4_world.svg" alt="World map of Bdoyan diaspora">
+    <figcaption><b>Map 4</b><span>Beyond the region. Newer branches in Western Europe and the United States, mostly formed after 1991.</span></figcaption>
+  </figure>
+</div>
+</section>
+
+<!-- ======================= VII ======================= -->
+<section class="chapter" id="ch7">
+<div class="main">
+  <header class="opener"><div class="big">VII</div><div class="no">Chapter VII <span>THE GUIDE</span></div><h2>Finding the Exact Family Tree</h2><div class="hy">Ինչպես վերականգնել տոհմածառը</div></header>
+
+  <p class="lead">The full tree from Bdo to today — the Armenian <em>tohmatsar</em> (<span class="arm">տոհմածառ</span>) — can be rebuilt. The method is to start with the living and work backwards, one generation and one record at a time.</p>
+
+  <p>Each period of the family’s history left a different kind of record, kept in a different place. Think of the search as five layers, from the present back to Bdo:</p>
+</div>
+
+<div class="road">
+  <div class="st"><div class="bar"></div><div class="yr">Today → 1930s</div><div class="nm">Living memory</div><p>Elders, family papers, photos, letters, gravestones. Quickest and most important.</p></div>
+  <div class="st"><div class="bar"></div><div class="yr">1991 → 1920s</div><div class="nm">Soviet civil records</div><p>Birth, marriage and death certificates in Georgia and Armenia.</p></div>
+  <div class="st"><div class="bar"></div><div class="yr">1920s → 1830s</div><div class="nm">Church registers</div><p>Baptisms, marriages and burials at St Hakob, Pokr Khanchali.</p></div>
+  <div class="st"><div class="bar"></div><div class="yr">1897 → 1830s</div><div class="nm">Imperial lists</div><p>Household lists and censuses naming each man and his father.</p></div>
+  <div class="st"><div class="bar"></div><div class="yr">Before 1830</div><div class="nm">Karin</div><p>The hardest layer. Few Ottoman records name villagers.</p></div>
+</div>
+
+<div class="main">
+  <h3>Step by step</h3>
+  <ol class="steps">
+    <li><b>Begin with the elders</b>Record (audio or video) the oldest Bdoyans, especially anyone born in Pokr Khanchali before about 1960. Ask for names, nicknames, the branch or “house” within the family, where each brother went, and who married whom. Copy every document and photograph, and write down who is in each picture.
+      <span class="where"><i>Where:</i> every Bdoyan household. Share the results, because each branch remembers a different part.</span></li>
+    <li><b>Read the stones</b>Photograph every Bdoyan gravestone in the cemetery around St Hakob in Pokr Khanchali, and in Ninotsminda and Akhalkalaki. Note names, dates and any patronymic (“son of …”). Gravestones often fill gaps for the late 19th and early 20th centuries.
+      <span class="where"><i>Where:</i> Pokr Khanchali church cemetery; town cemeteries of Javakhk.</span></li>
+    <li><aside class="side box"><span class="k">Search every spelling</span>The name appears as <b>Բդոյան</b> in Armenian, <b>Бдоян</b> in Russian and <b>ბდოიანი</b> (Bdoiani) in Georgian records, and as Bdoyan, Bdojan or Bdoian in Latin script. Older documents may write the clan form, “of the house of Bdo”.</aside><b>Collect civil records</b>For people born or married after the 1920s, request certified extracts of birth, marriage and death records. Close relatives can usually request them; for older entries the archive of the civil registry may need to be searched.
+      <span class="where"><i>Georgia:</i> Public Service Development Agency (civil registry, Ministry of Justice). <i>Armenia:</i> Civil Status Registration Agency (ՔԿԱԳ), Ministry of Justice.</span></li>
+    <li><aside class="side box"><span class="k">Reading a register</span>Entries are in Armenian, later partly in Russian. A baptism gives the child’s name, the dates of birth and baptism, and both parents’ names; a marriage names the fathers of bride and groom. Each entry lets you climb one generation.</aside><b>Search the church registers (metrical books)</b>From the 1830s until about 1920, the priests of St Hakob kept registers of baptisms, marriages and deaths. Copies went to the diocesan consistory in Tiflis. Each entry names the parents, so you can climb back a generation at a time.
+      <span class="where"><i>Where:</i> National Archives of Georgia, Central Historical Archive (Tbilisi, archives.gov.ge); National Archives of Armenia (Yerevan, archives.am), which holds the archives of the Etchmiadzin Synod and many Armenian church registers. Ask for “Pokr (Patara) Khanchali, Akhalkalaki uyezd” — Tiflis governorate from 1867, Kutais governorate before that.</span></li>
+    <li><aside class="side box"><span class="k">Ask for these, in Russian</span><b>метрические книги</b> — metrical (church) books<br><b>посемейные списки</b> — family lists, 1886<br><b>камеральные описания</b> — household descriptions<br><b>перепись 1897 года</b> — 1897 census</aside><b>Find the first Russian lists</b>The household lists and descriptions drawn up in the 1830s–1880s, the family lists of 1886 and the 1897 census list every household head with his sons and their ages. The earliest of these, made soon after 1830, are the most likely documents to name Bdo’s sons or grandsons with their fathers’ names — the bridge back to Bdo himself.
+      <span class="where"><i>Where:</i> National Archives of Georgia (Tbilisi). A professional archive researcher in Tbilisi can locate and photograph the Khanchali pages.</span></li>
+    <li><b>Look for Vard Bdoyan’s papers</b>Ask whether his personal archive, including the unpublished <i>Ethnography</i> and <i>Folklore of Javakhk</i>, is held by the Institute of Archaeology and Ethnography or was kept by his family. Ask too about the 1986 manuscript submitted to the Hayastan publishing house.
+      <span class="where"><i>Where:</i> Institute of Archaeology and Ethnography, National Academy of Sciences of Armenia, 15 Charents St, Yerevan (iae.am); Vard Bdoyan’s descendants; the History Museum of Armenia; the Akhalkalaki regional museum.</span></li>
+    <li><aside class="side box"><span class="k">Which test?</span><b>Y-DNA</b> (men only) follows the unbroken father-to-son line and can prove descent from Bdo.<br><b>Autosomal</b> (anyone) finds cousins on all sides, back about five or six generations.</aside><b>Test DNA</b>Ask two or three Bdoyan men from different branches to take a Y-DNA test (Y-37 or higher), and join the Armenian DNA Project. Matching results confirm a shared male-line ancestor. Autosomal tests (such as AncestryDNA, MyHeritage or FamilyTreeDNA Family Finder) help connect cousins through female lines.
+      <span class="where"><i>Where:</i> FamilyTreeDNA, Armenian DNA Project (familytreedna.com).</span></li>
+    <li><b>Build and share one tree</b>Put everything into a single shared online tree, cite the source for every fact, and invite each branch to add its own line.
+      <span class="where"><i>Where:</i> FamilySearch (free, familysearch.org), Geni or MyHeritage. Also check FamilySearch’s catalogue under Akhalkalaki and Tiflis for filmed Caucasus records.</span></li>
+  </ol>
+</div>
+
+<div class="main nobreak">
+  <h3>Questions to ask the elders</h3>
+  <aside class="side box"><span class="k">Background on Karin</span>For the villages of the Karin plain before 1915, see the Houshamadyan project (houshamadyan.org), which documents the Armenian towns and villages of the Ottoman Empire. Ottoman records from before 1830 rarely name individual villagers, so the earliest Russian lists are the realistic bridge to Bdo.</aside>
+  <ul class="check">
+    <li>What was your father’s name, and his father’s, as far back as you know? (The old ideal was <i>yot port</i> — seven generations.)</li>
+    <li>Which “house” or branch of the Bdoyans do we belong to, and what was it called?</li>
+    <li>Which house in Pokr Khanchali was ours, and who lived there with whom?</li>
+    <li>Did anyone say what Bdo’s full name was, or what Vard Bdoyan said about him?</li>
+    <li>Which brothers or cousins left, when, and where did they go?</li>
+    <li>Who married into the family, and from which villages and families?</li>
+    <li>Are there documents, letters, Bibles or photographs with names and dates written on them?</li>
+  </ul>
+  <h4 style="margin-top:7mm">Directory</h4>
+  <div class="dir">
+    <div><b>National Archives of Georgia</b>Central Historical Archive: church registers, household lists, 1830s–1920s.<span>1 Vazha-Pshavela Ave, Tbilisi · archives.gov.ge</span></div>
+    <div><b>National Archives of Armenia</b>Etchmiadzin Synod archives and Armenian church records.<span>5/2 Hrachya Kochar St, Yerevan · archives.am</span></div>
+    <div><b>Institute of Archaeology &amp; Ethnography</b>National Academy of Sciences of Armenia: Vard Bdoyan’s institute.<span>15 Charents St, Yerevan · iae.am</span></div>
+    <div><b>Civil registries</b>Birth, marriage and death records after the 1920s.<span>Georgia: Public Service Development Agency · Armenia: ՔԿԱԳ</span></div>
+    <div><b>FamilySearch</b>Free family-tree platform and catalogue of filmed records.<span>familysearch.org</span></div>
+    <div><b>Armenian DNA Project</b>Y-DNA and autosomal comparison with other Armenian families.<span>familytreedna.com</span></div>
+  </div>
+</div>
+</section>
+
+<!-- ======================= WORKSHEET ======================= -->
+<section class="sheet" id="sheet">
+  <div class="no" style="font-family:var(--sans);font-size:6.6pt;letter-spacing:.26em;font-weight:650;color:var(--accent)">WORKSHEET &nbsp;·&nbsp; <span class="arm" style="letter-spacing:.08em">ԱՇԽԱՏԱԹԵՐԹ</span></div>
+  <h2>Your Line Back to Bdo</h2>
+  <p class="intro">Print this page and fill in your own male line, from yourself at the bottom up to Bdo at the top. Write a source next to every name (an elder, a certificate, a register, a gravestone). Leave gaps blank until a record fills them, and add rows if your line is longer.</p>
+  <div class="ped">
+    <div class="gl">I</div><div class="bx root"><div class="f">Name<em>Bdo · Բդո</em></div><div class="f">Born – died<em>c. 1740–1780</em></div><div class="f">Place<em>Dinarigom, Karin</em></div><div class="f">Source<em>Family tradition</em></div></div>
+    <div class="gl">II</div><div class="bx"><div class="f">Name</div><div class="f">Born – died</div><div class="f">Place</div><div class="f">Source</div></div>
+    <div class="gl">III</div><div class="bx"><div class="f">Name</div><div class="f">Born – died</div><div class="f">Place</div><div class="f">Source</div></div>
+    <div class="gl">IV</div><div class="bx"><div class="f">Name</div><div class="f">Born – died</div><div class="f">Place</div><div class="f">Source</div></div>
+    <div class="gl">V</div><div class="bx"><div class="f">Name</div><div class="f">Born – died</div><div class="f">Place</div><div class="f">Source</div></div>
+    <div class="gl">VI</div><div class="bx"><div class="f">Name</div><div class="f">Born – died</div><div class="f">Place</div><div class="f">Source</div></div>
+    <div class="gl">VII</div><div class="bx"><div class="f">Name</div><div class="f">Born – died</div><div class="f">Place</div><div class="f">Source</div></div>
+    <div class="gl">VIII</div><div class="bx"><div class="f">Name</div><div class="f">Born – died</div><div class="f">Place</div><div class="f">Source</div></div>
+    <div class="gl">IX</div><div class="bx"><div class="f">Name</div><div class="f">Born – died</div><div class="f">Place</div><div class="f">Source</div></div>
+    <div class="gl">X</div><div class="bx you last"><div class="f">Name (you)</div><div class="f">Born</div><div class="f">Place</div><div class="f">Source</div></div>
+  </div>
+</section>
+
+<!-- ======================= SOURCES ======================= -->
+<section class="chapter" id="sources">
+<div class="main">
+  <header class="opener"><div class="no">Appendix <span>REFERENCES</span></div><h2>Sources and Notes</h2><div class="hy">Աղբյուրներ</div></header>
+  <div class="sources">
+    <p><b>Nahapetyan, Rafik.</b> “A Great Benefactor of Armenian Ethnography and Folklore Studies (on the 100th anniversary of Vard Bdoyan).” <i>Etchmiadzin</i>, 2010. Main source for Vard Bdoyan’s biography, works, unpublished manuscripts and ideas, including the quotation in Chapter IV. <span class="u">arar.sci.am/Content/253651/file_0.pdf</span></p>
+    <p><b>“Javakhk” Encyclopedia</b> (ed. Sergey Khudaverdyan). Word list entry: Bdoyan Vard Harutyuni, Pokr Khanchali, Doctor of Historical Sciences. <span class="u">javakhk.am/encyclopedia/wordlist.html</span></p>
+    <p><b>Armenian Apostolic Church in Georgia.</b> “Pokr Khanchali – Surb Hakob church.” Dates of the parish, rebuilding (1875), consecration and school (1864). <span class="u">armenianchurch.ge</span></p>
+    <p><b>Soviet Armenian Encyclopedia,</b> vol. 5, “Karin” (district). The 1909 list of 48 Armenian villages of the Karin district, including Dinargom; the 1829–30 emigration. <span class="u">hy.wikisource.org</span></p>
+    <p><b>Wikipedia,</b> “Monastery of Saint Minas of Kes.” Armenian villages of the Erzurum plain in the 19th century; the 1829–30 exodus (about 10,000 families, 75,000 people). <span class="u">en.wikipedia.org/wiki/Monastery_of_Saint_Minas_of_Kes</span></p>
+    <p><b>Armenian Wikipedia,</b> articles “Javakhk”, “Mets Khanchali”, “Khanchali (lake)”, “Khojabek”. Settlement of Javakhk from Karin in 1829–30; about 35,000–40,000 of some 80,000 migrants settling in the region; village geography. <span class="u">hy.wikipedia.org</span></p>
+    <p><b>Wikimapia,</b> “Pokr Khanchali.” Altitude and settlement in 1829–1830 by migrants from Karin. <span class="u">wikimapia.org/7418530</span></p>
+    <p><b>On the Karin dialect in Javakhk,</b> student project “Karno (Javakhk) dialect”, 2021: area of use and sample vocabulary. <span class="u">manukyanmarianna.wordpress.com</span></p>
+    <p><b>Map data:</b> Natural Earth (public domain), 1:10m and 1:50m cultural and physical vectors. Historical frontier, routes and family centres drawn for this booklet; the small lakes of Javakheti are shown schematically.</p>
+  </div>
+
+  <div class="note-box"><b>A note on certainty</b>This booklet separates what records confirm from what the family remembers. Confirmed: Vard Bdoyan’s birth in Pokr Khanchali in 1910 and his career; the settlement of Pokr Khanchali by Karin Armenians in 1829–1830; the history of its church; the existence of Dinarigom on the Karin plain. Family tradition: Bdo’s home in Dinarigom and the details of his life. Estimates: Bdo’s dates, generation counts, and the likely centres on the maps. Each of these can be tested against the records listed in Chapter VII, and the booklet can be updated as names are found.</div>
+
+  <div class="endmark">
+    <svg width="30" height="30" viewBox="-50 -50 100 100" aria-hidden="true"><g fill="none" stroke="#A9813F" stroke-width="3"><circle r="44" opacity=".5"/><g id="pet2"><path d="M0 0 C 10 -14, 10 -30, 0 -40 C -10 -30, -10 -14, 0 0 Z"/></g><use href="#pet2" transform="rotate(45)"/><use href="#pet2" transform="rotate(90)"/><use href="#pet2" transform="rotate(135)"/><use href="#pet2" transform="rotate(180)"/><use href="#pet2" transform="rotate(225)"/><use href="#pet2" transform="rotate(270)"/><use href="#pet2" transform="rotate(315)"/><circle r="5" fill="#A9813F"/></g></svg>
+  </div>
+</div>
+</section>
+
+</body>
+</html>
